@@ -3,7 +3,7 @@
 Plugin Name: Copymatic
 Plugin URI: https://copymatic.ai
 Description: Your favorite AI-powered content writer. Generate engaging and quality content from blog articles to landing pages.
-Version: 2.0
+Version: 2.1
 Author: Copymatic
 Author URI: https://copymatic.ai
 Text Domain: copymatic
@@ -205,7 +205,7 @@ function check_copymatic_api() {
 	}
 	$api_key = isset($_POST['apikey']) ? sanitize_text_field(trim($_POST['apikey'])) : '';
 	if(!empty($api_key) && is_user_logged_in()){
-		$website_name = get_bloginfo('name');
+		$website_name = urlencode(get_bloginfo('name'));
 		$plugins_url = plugins_url();
 		$home_url = home_url();
 		$endpoint_url = $home_url.'/wp-json/copymatic/v1/article/';

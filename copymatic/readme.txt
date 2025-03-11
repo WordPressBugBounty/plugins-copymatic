@@ -5,7 +5,7 @@ Tags: ai content, contentbot, content writer, article generator, ai writer
 Requires at least: 4.7
 Tested up to: 6.5.2
 Requires PHP: 5.6
-Stable tag: 2.0
+Stable tag: 2.1
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -65,6 +65,9 @@ Copymatic allows you to generate articles with AI and this plugin lets you impor
 Nothing here
 
 == Changelog ==
+
+= 2.1 - 2025-03-11 =
+* Fix API call
 
 = 1.9 - 2024-04-19 =
 * Fix Ajax Calls
